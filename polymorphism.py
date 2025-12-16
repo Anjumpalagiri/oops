@@ -1,11 +1,12 @@
-#Polymorphism means same method name but different behavior
-class Animal:
-    def sound(self):
-        print("Animal makes sound")
+# Many Forms for One Function
+# poly = 'Many'
+# morphism  = 'Forms'
 
-class Dog(Animal):
-    def sound(self):
-        print("Dog barks")
+def add(a,b):
+    print(a+b)
+add(1,2)
+add(1.5,2.8)
+add("raju"," Reddy")
+add([1,2],[3,4])
+add((5,6),(7,6))
 
-d = Dog()
-d.sound()
