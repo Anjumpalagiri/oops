@@ -1,14 +1,8 @@
 #Abstraction means hiding internal details and showing only what is needed.
-from abc import ABC, abstractmethod
+class ATM:
+  def withdrawn(self):
+    print("Money withdrawn successfully")
+atm1=ATM()
+atm1.withdrawn()
 
-class Vehicle(ABC):
-    @abstractmethod
-    def start(self):
-        pass
 
-class Bike(Vehicle):
-    def start(self):
-        print("Bike starts")
-
-b = Bike()
-b.start()
